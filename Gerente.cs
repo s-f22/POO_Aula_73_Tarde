@@ -21,7 +21,22 @@ namespace Heranca
 
         public void ExibirSalario()
         {
-            Console.WriteLine(Salario);
+            Console.WriteLine($"Salario: {Salario:C}");
+        }
+
+        public void DefinirSalario(decimal valor)
+        {
+            Salario = valor;
+        }
+
+        public override void Trabalhar()
+        {
+            Console.WriteLine("Gerente está trabalhando");
+        }
+
+        public override decimal CalcularBonus()
+        {
+            return 1000m;
         }
 
     }

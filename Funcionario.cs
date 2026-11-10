@@ -7,19 +7,22 @@ namespace Heranca
 
         public Funcionario()
         {
-            
+
         }
-        
+
         public Funcionario(string nome, decimal salario)
         {
             Nome = nome;
             Salario = salario;
         }
 
-        public void Trabalhar()
+        public virtual void Trabalhar()
         {
             Console.WriteLine("Funcionário está trabalhando.");
         }
 
+        public abstract decimal CalcularBonus();
+
+        
     }
 }
